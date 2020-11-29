@@ -18,7 +18,7 @@ def SendMail(ImgFileName):
     msg['From'] = 'sender@gmail.com'
     msg['To'] = 'receiver@gmail.com'
 
-	#specifying mail body
+	#Specifying mail body
     text = MIMEText("This is the mail using python code")
     msg.attach(text)
     image = MIMEImage(img_data, name=os.path.basename(ImgFileName))
