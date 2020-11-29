@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 
-#define a function/method to send mail with an image attachment
+#Function to send mail with an image attachment
 def SendMail(ImgFileName):
 	#open the image file in read mode
 	img_data = open(ImgFileName, 'rb').read()
@@ -32,8 +32,7 @@ def SendMail(ImgFileName):
     From='sender@gmail.com'
     To='receiver@gmail.com'
 
-	#Sending mail works as mentioned :
-	#start the server, login in the sender email, send mail, and finally quit/stop the server
+	#Sending mail works as mentioned : start the server, login in the sender email, send mail, and finally quit/stop the server
     s = smtplib.SMTP(Server, Port)
     s.ehlo()
     s.starttls()
