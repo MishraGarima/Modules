@@ -14,33 +14,32 @@ def SendMail(ImgFileName):
 	#create a mail object
 	msg = MIMEMultipart()
 	#specifying mail headers
-    msg['Subject'] = 'Subject'
-    msg['From'] = 'sender@gmail.com'
-    msg['To'] = 'receiver@gmail.com'
-
+	msg['Subject'] = 'Subject'
+	msg['From'] = 'sender@gmail.com'
+	msg['To'] = 'receiver@gmail.com'
+	
 	#specifying mail body
-    text = MIMEText("This is the mail using python code")
-    msg.attach(text)
-    image = MIMEImage(img_data, name=os.path.basename(ImgFileName))
-    msg.attach(image)
-
-    Server='smtp.gmail.com'
-    Port='587'
-    UserName='sender@gmail.com'
+	text = MIMEText("This is the mail using python code")
+	msg.attach(text)
+	image = MIMEImage(img_data, name=os.path.basename(ImgFileName))
+	msg.attach(image)
+	
+	Server='smtp.gmail.com'
+	Port='587'
+	UserName='sender@gmail.com'
 	#enter password for the email used
-    UserPassword=' '
-    From='sender@gmail.com'
-    To='receiver@gmail.com'
-
-	#Sending mail works as mentioned :
-	#start the server, login in the sender email, send mail, and finally quit/stop the server
-    s = smtplib.SMTP(Server, Port)
-    s.ehlo()
-    s.starttls()
-    s.ehlo()
-    s.login(UserName, UserPassword)
-    s.sendmail(From, To, msg.as_string())
-    s.quit()
+	UserPassword=' '
+	From='sender@gmail.com'
+	To='receiver@gmail.com'
+	
+	#Sending mail works as mentioned : start the server, login in the sender email, send mail, and finally quit/stop the server
+	s = smtplib.SMTP(Server, Port)
+	s.ehlo()
+	s.starttls()
+	s.ehlo()
+	s.login(UserName, UserPassword)
+	s.sendmail(From, To, msg.as_string())
+	s.quit()
 
 #Enter image name directly to be sent if the image file is in same folder else, enter path as well
 img="data.jpeg"
