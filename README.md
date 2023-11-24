@@ -16,3 +16,12 @@
   * A SMTP connection is established, logged in into desired sender account, the mail object created is send and the connection is closed. Here the sender email can be with any desired domain but needs low level security.
 * Send Mail
   * The file contains a part of php code to send a mail.
+
+### Implementation Instructions
+* *QuadraticEqnRoots_FastAPI.py*
+  * Save the .py file in python editor (e.g.: Pycharm)
+  * Use command *> QuadraticEqnRoots_FastAPI:app --reload* on the terminal
+  * Once you see 'Application startup complete' on the terminal go to browser (chrome) and execute:
+    * Go to url *http://127.0.0.1:8000/docs* to open FastAPI Swagger and execute using UI
+    * Use url *127.0.0.1:8000/?a=__&b=__&c=__* to obtain result where __ specify the desired value for variables a, b, and c (can be used directly as it is a GET request). E.g.: *127.0.0.1:8000/?a=1&b=-7&c=10*
+  * Go to termial and press *Ctrl+C* to terminate the connection 
