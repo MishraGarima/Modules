@@ -1,5 +1,10 @@
 # Modules
 *This repository contains beneficial implemented modules.*
+* Plots - I
+  * This python code contains some simple sample plots using Matplotlib and Seaborn all with the purpose of fitting more than one piece of attribute information on single plot by adding dimensions to the plot and benefit comparison while maintaining easy readability of the plots.
+  * First plot is heatmap with two different values placed one below the other in the call while color coded for the top value.
+  * Second plot is simple bar plot with two line plots imposed on the same plot and values of line plots printed near the marker for bar plot axis on the left and line plot axis on the right.
+  * Third plot is compound bar plot with three plots one value on left and other two values stacked one on the other on the right as part of single element on a particular x-axis value. 
 * QuadraticEqnRoots_FastAPI
   * This file contains python code to find roots of a quadratic equation and provide result as json.
   * FastAPI GET call is used for the process.
@@ -22,11 +27,7 @@
   * A SMTP connection is established, logged in into desired sender account, the mail object created is send and the connection is closed. Here the sender email can be with any desired domain but needs low level security.
 * Send Mail
   * The file contains a part of php code to send a mail.
-* Simple Plots
-  * This python code contains some simple sample plots using Matplotlib and Seaborn all with the purpose of fitting more than one piece of attribute information on single plot by adding dimensions to the plot and benefit comparison while maintaining easy readability of the plots.
-  * First plot is heatmap with two different values placed one below the other in the call while color coded for the top value.
-  * Second plot is simple bar plot with two line plots imposed on the same plot and values of line plots printed near the marker for bar plot axis on the left and line plot axis on the right.
-  * Third plot is compound bar plot with three plots one value on left and other two values stacked one on the other on the right as part of single element on a particular x-axis value. 
+
 
 ### Implementation Instructions
 * *QuadraticEqnRoots_FastAPI.py*
